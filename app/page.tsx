@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-      <main className="flex flex-col items-center justify-center w-full gap-10 overflow-hidden">
-          <h1 className="text-primary-foreground text-4xl">Your One Stop Mall!</h1>
+      <main className="flex flex-col bg-accent-foreground items-center justify-center w-full gap-10 overflow-hidden">
+          <h1 className="text-primary-foreground text-4xl">Your One Stop Shop!</h1>
 
 
           <p className="w-[30%] max-md:w-[80%] text-primary-foreground text-center">
