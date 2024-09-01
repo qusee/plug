@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import {GeistSans} from "geist/font/sans";
 import "./globals.css";
+import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={GeistSans.className}>
+
+      <aside className={'w-[15%]'}>
+      {/*    Side Navigation Bar   */}
+      </aside>
+      <main className={'w-[85%]'}>
+        {children}
+      </main>
+      </body>
     </html>
   );
 }
